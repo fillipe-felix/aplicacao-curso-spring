@@ -23,9 +23,9 @@ public class AlunoResource {
         return ResponseEntity.ok().body(cursoList);
     }
 
-    @GetMapping(value = "/{nome}")
-    public ResponseEntity<Aluno> findById(@PathVariable String nome) {
-        Aluno curso = alunoService.findById(nome);
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<Aluno> findById(@PathVariable Long id) {
+        Aluno curso = alunoService.findById(id);
         return ResponseEntity.ok().body(curso);
     }
 
@@ -36,15 +36,15 @@ public class AlunoResource {
         return ResponseEntity.created(uri).body(obj);
     }
 
-    @DeleteMapping(value = "/{cpf}")
-    public ResponseEntity<Void> delete(@PathVariable String cpf) {
-        alunoService.delete(cpf);
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        alunoService.delete(id);
         return ResponseEntity.noContent().build();
     }
 
-    @PutMapping(value = "/{cpf}")
-    public ResponseEntity<Aluno> update(@PathVariable String cpf, @RequestBody Aluno obj) {
-        obj = alunoService.update(cpf, obj);
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<Aluno> update(@PathVariable Long id, @RequestBody Aluno obj) {
+        obj = alunoService.update(id, obj);
         return ResponseEntity.ok().body(obj);
     }
 }

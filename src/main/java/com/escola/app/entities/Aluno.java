@@ -29,6 +29,10 @@ public class Aluno implements Serializable {
         this.endereco = endereco;
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public String getCpf() {
         return cpf;
     }

@@ -19,7 +19,7 @@ public class AlunoService {
         return alunoRepository.findAll();
     }
 
-    public Aluno findById(String id) {
+    public Aluno findById(Long id) {
         Optional<Aluno> curso = alunoRepository.findById(id);
         return curso.get();
     }
@@ -28,11 +28,11 @@ public class AlunoService {
         return alunoRepository.save(curso);
     }
 
-    public void delete(String id) {
+    public void delete(Long id) {
         alunoRepository.deleteById(id);
     }
 
-    public Aluno update(String id, Aluno obj) {
+    public Aluno update(Long id, Aluno obj) {
         Aluno entity = alunoRepository.getOne(id);
         updateData(entity, obj);
         return alunoRepository.save(entity);
