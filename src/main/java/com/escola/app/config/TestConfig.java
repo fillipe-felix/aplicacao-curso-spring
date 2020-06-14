@@ -35,8 +35,8 @@ public class TestConfig implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
 
-        Curso curso1 = new Curso(null, "ADS", "ensino Médio", 200, 1000.0);
-        Curso curso2 = new Curso(null, "GTI", "ensino Médio", 100, 1000.0);
+        Curso curso1 = new Curso(null, "ADS", "Ensino Médio", 200, 1000.0);
+        Curso curso2 = new Curso(null, "GTI", "Ensino Médio", 100, 1000.0);
 
         Turma turma1 = new Turma(null, "Noturno", "12-01-2018", "12-12-2020", "19:00", "22:30", 40, curso1);
         Turma turma2 = new Turma(null, "Diurno", "12-01-2018", "12-12-2020", "7:30", "13:00", 40, curso1);

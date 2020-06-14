@@ -27,7 +27,7 @@ public class Aluno implements Serializable {
         this.nome = nome;
         this.fone = fone;
         this.endereco = endereco;
-        
+
     }
 
     public Long getId() {
