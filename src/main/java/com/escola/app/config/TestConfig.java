@@ -49,7 +49,7 @@ public class TestConfig implements CommandLineRunner {
         Aluno aluno1 = new Aluno("111111111-11", "11111", "Fillipe", "999999", "rua ceara");
         Aluno aluno2 = new Aluno("222222222-22", "22222", "Kaique", "999999", "rua josefina");
         Aluno aluno3 = new Aluno("333333333-33", "33333", "Joao", "999999", "rua andradina");
-        Aluno aluno4 = new Aluno("444444444-44", "44444", "Andre", "999999", "rua ceara");
+        Aluno aluno4 = new Aluno("444444444-44", "44444", "Andre", "999999", "rua zeferino");
 
         alunoRepository.saveAll(Arrays.asList(aluno1, aluno2, aluno3, aluno4));
 
